@@ -1,0 +1,711 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Aplico grid*/
+
+.contenedor-principal{
+    display: grid;
+
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ; 
+    
+    width: 100%;
+    height: 100vh;
+    grid-template-rows: 0.65fr 2.75fr 0.5fr; 
+
+}
+
+/*Estructura principal*/
+
+header{
+    background-color: black;
+    grid-area: header;
+}
+
+main{
+    background-image: url(../assets/abejas-miel-3.png);
+    grid-area: main;
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+footer{
+    background-color: black;
+    grid-area: footer;
+}
+
+/*Barra de navegacion*/
+
+nav{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.navbar{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    width: 35%;
+    /* padding-bottom: 5px; */
+    margin-left: 60%;
+    margin-top: 5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+
+}
+/*Logo oro dulce*/
+
+.encabezado-img {
+    width: 8%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding: 5px;
+}
+
+/* Main Index */
+
+.contenedor-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-presentacion {
+    /* grid-area: textoPresentacion; */
+    display: flex;
+    font-size: 2.2rem;
+    color: #DBB314;
+    font-family: 'Caveat Brush', cursive;
+    /* justify-content: end;
+    align-items: center; */
+    width: 50%;
+
+    /* border: 5px solid white; */
+
+}
+
+.texto-presentacion-mobile{
+    display: none;
+}
+
+.img-home {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 24%;
+    padding-top: 1rem;
+
+}
+
+.navbar :hover {
+    color: #DBB314;
+}
+
+/* Footer*/
+
+.pie-de-pagina h3 {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    font-size: 1.6rem;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    padding: 10px;
+}
+
+.pie-de-pagina ul {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pie-de-pagina ul li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    width: 5%;
+}
+
+.pie-de-pagina ul li a{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.pie-de-pagina h3{
+    padding-top: 1rem;
+}
+
+
+
+.logo-facebook {
+    width: 75%;
+    height: 75%;
+}
+
+.logo-whatsapp {
+    width: 75%;
+    height: 75%;
+}
+
+.logo-instagram {
+    width: 75%;
+    height: 75%;
+} 
+
+/* Grilla secundaria */
+.contenedor-secundario{
+    display: grid;
+
+    grid-template-areas: 
+    "header"
+    "seccion"
+    "footer"
+    ; 
+ 
+    height: 100vh;
+    width:100%;
+    grid-template-rows: 0.65fr 2.75fr 0.5fr; 
+
+}
+
+section {
+    grid-area: seccion;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    /* background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(233, 173, 19, 1) 100%); */
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(233,173,19,1) 15%);
+
+    /*Acomodo el content para que se adapte a mi pantalla*/
+    /* min-height: calc(100vh - 75px - 75px); */
+    /* background-size: 90rem; 253,187,45,1 -- 233,173,19,1 -- 219,179,20,1*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;;
+    }
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color: black;
+    font-family: 'Caveat Brush', cursive;   
+   }
+
+   /* Pestaña quienes somos*/
+.contenedor-quienes-somos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.texto-quienes-somos{
+    font-size: 1.2rem;
+    color: black;
+    font-family: 'Caveat Brush', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.texto-quienes-somos p {
+    text-align: justify;
+}
+
+.img-quienes-somos{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 35%;
+    border: 5px solid black;
+}
+
+ /* Pestaña Productos*/
+.img-productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 5rem;
+    padding-top: 1rem;
+    /* object-fit: contain; */
+    /* width: fit-content;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin:0 auto; */
+}
+
+.producto1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.producto2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.producto3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.producto4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-producto1 {
+    height: 75%;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: fill;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
+}
+
+.img-producto2 {
+    height: 75%;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: fill;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.img-producto3 {
+    height: 75%;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: fill;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.img-producto4 {
+    height: 75%;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: fill;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+}
+
+.pie-de-foto{
+    font-size: 1.3rem;
+    color: black;
+    font-family: 'Caveat Brush', cursive;
+    padding: .5rem;
+
+}
+
+/* Pestaña comprar*/
+
+.contenedor-ciudades{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.masinfo {
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: black;
+    font-family: 'Caveat Brush', cursive;
+    border: black solid;
+    margin-top: 2rem;
+}
+
+.ciudades {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    font-family: 'Caveat Brush', cursive;
+    
+}
+
+.lugar {
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: black;
+    font-family: 'Caveat Brush', cursive;
+}
+
+/* Pestaña Formulario*/
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 2rem;
+    gap: 5rem;
+
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+    font-family: 'Caveat Brush', cursive;
+    /* border-radius:15px; */
+}
+
+.formP1{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* justify-content: space-around;
+    align-items: center; */
+}
+
+form input[type="text"],
+form input[type="email"],form input[type="tel"]{
+	width:12rem;
+	/* padding:3px 10px; */
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+}
+
+form input[type="submit"],form input[type="reset"]{
+    width:25%;
+	padding:8px 16px;
+	border:1px solid #000;
+	border-radius:5px;
+	color:#fff;
+	background-color:#000;
+    text-align: center;
+    margin: .5rem;
+}
+
+textarea{
+	width:100%;
+	height:10rem;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	/*resize: vertical | horizontal | none | both*/
+}
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+}
+
+form input[type="reset"]:hover{
+	cursor:pointer;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Vista Mobile*/
+
+@media screen and (max-width:500px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .navbar{
+        list-style: none;
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        border: 1px solid white;
+
+        /* padding-bottom: 5px; */
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: white;
+        font-family: 'Bebas Neue', cursive;
+        margin: auto;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        /* border: 1px solid white; */
+    
+    }
+
+    nav ul li{
+        margin: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        border: 1px solid white;
+    }
+
+    .encabezado-img {
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+    }
+
+    /*Formato Main*/
+
+    h1 {
+        font-size: 2.25rem;
+        text-align: center;
+       }
+
+    .contenedor-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .img-home {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        /* padding-top: 1rem; */
+    
+    }
+
+    .texto-presentacion-mobile{
+        visibility: visible;
+        display: flex;
+        font-size: 2rem;
+        color: #DBB314;
+        font-family: 'Caveat Brush', cursive;
+        padding-top: 1rem;
+        /* justify-content: end;
+        align-items: center; */
+        /* width: 50%; */
+    }
+
+    .texto-presentacion{
+        display: none;
+    }
+
+    .logo-facebook {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .logo-whatsapp {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .logo-instagram {
+        width: 100%;
+        height: 100%;
+    } 
+
+    .pie-de-pagina ul li a{
+        padding-bottom: 0rem;
+        padding-top: 0rem;
+    }
+
+    .pie-de-pagina h3 {
+
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    .pie-de-pagina ul li {
+        width: 10%;
+        padding-bottom: 1rem;
+    }
+
+    section {
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(233,173,19,1) 5%);
+    }
+
+/* Pestaña quienes somos*/
+
+.contenedor-quienes-somos{
+    flex-direction: column;
+}
+
+.texto-quienes-somos{
+    font-size: 1.2rem;
+    width: 90%;
+    margin-bottom: 2rem;
+}
+
+.img-quienes-somos{
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+
+
+/* Pestaña Productos*/
+.img-productos{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.img-producto1 {
+    height: 60%;
+    width: 60%;
+}
+
+.img-producto2 {
+    height: 60%;
+    width: 60%;
+   }
+
+.img-producto3 {
+    height: 60%;
+    width: 60%;
+}
+
+.img-producto4 {
+    height: 60%;
+    width: 60%;
+
+}
+
+.pie-de-foto{
+    font-size: 1.75rem;
+    padding: .75rem;
+
+}
+
+.producto4{
+    margin-bottom: 2rem;
+}
+
+/* Pestaña comprar*/
+
+.contenedor-ciudades{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.masinfo {
+    font-size: 1.5rem;
+    border-top:solid 2px black;
+    border-right:solid 0px cyan;
+    border-bottom:solid 2px black;
+    border-left:solid 0px yellow;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.ciudades {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    
+}
+
+.lugar {
+    font-size: 1.3rem;
+}
+
+.ciudades ul{
+    width: 100%;
+    text-align: center;
+}
+
+
+
+/* Pestaña Formulario*/
+
+.formulario{
+    flex-direction: column;
+    width: 100%;
+    padding-top: .5rem;
+    gap: 0rem;
+}
+
+.formP1{
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.formP2{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    /* justify-content: space-around;
+    align-items: center; */
+}
+
+form input[type="text"],
+form input[type="email"],form input[type="tel"]{
+	width:15rem;
+}
+
+form input[type="submit"],form input[type="reset"]{
+    width:40%;
+    margin-bottom: 1rem;
+}
+
+}

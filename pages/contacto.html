@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oro Dulce - Contacto</title>
+  <!--Linkeo de Css-->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="contenedor-secundario">
+  <!-- Cabecera de la pagina -->
+  <header class="encabezado">
+    <!-- Barra de navegacion -->
+    <nav>
+    <!-- Logo de mi pagina -->
+    <img src="../assets/logo-oro-dulce.png" alt="Logo Oro Dulce" title="Logo Oro Dulce" class="encabezado-img" />
+    <!-- Fin del logo de la pagina -->
+
+      <!-- Enlaces de la barra de navegacion -->
+      <ul class="navbar">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./quienes-somos.html">Quienes Somos</a></li>
+        <li><a href="./productos.html">Productos</a></li>
+        <li><a href="./comprar.html">Comprar</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+      </ul>
+      <!-- Fin de los enlaces de la barra de navegacion  -->
+    </nav>
+    <!-- Fin de la barra de la navegacion  -->
+  </header>
+  <section>
+    <form class="formulario">
+      <div class="formP1">
+        <label for="nombre">
+          Nombre
+        </label>
+        <input type="text" id="nombre" placeholder="Ingresa tu Nombre" />
+        <label for="apellido">
+          Apellido
+        </label>
+        <input type="text" id="apellido" placeholder="Ingresa tu Apellido" />
+
+        <label for="telefono">
+          Telefono
+        </label>
+        <input type="tel" id="telefono" placeholder="Ingresa tu telefono" maxlength="10" />
+        <label for="mail">
+          e-mail
+        </label>
+        <input type="email" id="mail" placeholder="Ingresa tu email" />
+        <label>
+          Localidad
+        </label>
+        <select>
+          <option selected="selected">Selecciona una localidad</option>
+          <option>Villa Cañas</option>
+          <option>Santa Isabel</option>
+          <option>Teodelina</option>
+          <option>Venado Tuerto</option>
+          <option>Rosario</option>
+          <option>Junin</option>
+        </select>
+      </div>
+      <div class="formP2">
+        <label>
+          Ya conocias la pagina?
+        </label>
+        <br />
+        <span>Si</span>
+        <input type="radio" name="opcion" value="Si" />
+        <span>No</span>
+        <input type="radio" name="opcion" value="No" />
+        <br />
+        <label>
+          Te gustaría recibir información sobre promociones?
+        </label>
+        <br />
+        <span>Si</span>
+        <input type="checkbox" name="aceptar" />
+        <br />
+        <label for="comentarios">
+          Hace tu consulta o pedido aquí !
+        </label>
+        <br />
+        <textarea id="pedido" rows="10" cols="50"></textarea>
+        <br />
+        <div class="botones">
+          <input type="submit" />
+          <input type="reset" />
+        </div>
+
+      </div>
+
+    </form>
+  </section>
+  <!-- Footer -->
+  <footer class="pie-de-pagina">
+    <h3>Nuestras redes sociales</h3>
+    <ul>
+      <li class="logos"><a href="https://www.facebook.com/orodulceok/" target="_blank"> <img
+            src="../assets/logo-facebook.png" alt="Logo Facebook" class="logo-facebook" title="Oro Dulce - Facebook"
+            width="50px" height="50px"></a></li>
+      <li class="logos"><a href="https://wa.me/5493462687381" target="_blank"> <img src="../assets/logo-whatsapp.png"
+            alt="Logo Whatsapp" class="logo-whatsapp" title="Oro Dulce - Whatsapp" width="50px" height="50px"> </a></li>
+      <li class="logos"><a href="https://www.instagram.com/orodulce_/" target="_blank"> <img
+            src="../assets/logo-instagram.png" alt="Logo Instagram" class="logo-instagram" title="Oro Dulce - Instagram"
+            width="50px" height="50px"> </a></li>
+    </ul>
+
+    <!-- <h3>Contacto</h3>
+  
+      <a href="./pages/contacto.html">Contacto</a> -->
+
+  </footer>
+  <!-- Fin del footer  -->
+</body>
+
+</html>
