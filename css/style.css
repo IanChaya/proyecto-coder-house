@@ -169,17 +169,33 @@ nav ul li a {
 .logo-facebook {
     width: 75%;
     height: 75%;
+    transition: transform .5s;
+}
+
+.logo-facebook:hover{
+    transform: scale(1.25);
 }
 
 .logo-whatsapp {
     width: 75%;
     height: 75%;
+    transition: transform .5s;
+}
+
+.logo-whatsapp:hover{
+    transform: scale(1.25);
 }
 
 .logo-instagram {
     width: 75%;
     height: 75%;
+    transition: transform .5s;
 } 
+
+.logo-instagram:hover{
+    transform: scale(1.25);
+}
+
 
 /* Grilla secundaria */
 .contenedor-secundario{
@@ -301,7 +317,11 @@ h1 {
     align-items: center;
     object-fit: fill;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    
+    transition: transform.5s;    
+}
+
+.img-producto1:hover{
+    transform: scale(1.05);
 }
 
 .img-producto2 {
@@ -312,6 +332,12 @@ h1 {
     align-items: center;
     object-fit: fill;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: transform .5s;    
+}
+
+
+.img-producto2:hover{
+    transform: scale(1.05);
 }
 
 .img-producto3 {
@@ -322,6 +348,12 @@ h1 {
     align-items: center;
     object-fit: fill;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: transform .5s;    
+}
+
+
+.img-producto3:hover{
+    transform: scale(1.05);
 }
 
 .img-producto4 {
@@ -332,7 +364,12 @@ h1 {
     align-items: center;
     object-fit: fill;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: transform .5s;    
 
+}
+
+ .img-producto4:hover{
+    transform: scale(1.05);
 }
 
 .pie-de-foto{
@@ -446,6 +483,22 @@ form input[type="reset"]:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.boton-enviar{
+    transition: all .1s;
+}
+
+.boton-enviar:hover{
+    border: 1px solid white;
+}
+
+.boton-reset{
+    transition: all .1s;
+}
+
+.boton-reset:hover{
+    border: 1px solid white;
 }
 
 /* Vista Mobile*/
