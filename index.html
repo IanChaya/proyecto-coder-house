@@ -5,23 +5,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Linkeo de Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
   <!--Linkeo de Css-->
   <link rel="stylesheet" href="./css/style.css">
+  
   <title>Oro Dulce</title>
 </head>
 
 <body class="contenedor-principal">
   <!-- Cabecera de la pagina -->
   <header class="encabezado">
+    
     <!-- Barra de navegacion -->
-    <nav>
-
-          <!-- Logo de mi pagina -->
+    <!-- <nav>
     <img src="./assets/logo-oro-dulce.png" alt="Logo Oro Dulce" title="Logo Oro Dulce" class="encabezado-img" />
-    <!-- Fin del logo de la pagina -->
-
-
-      <!-- Enlaces de la barra de navegacion -->
       <ul class="navbar">
         <li ><a href="./index.html">Home</a></li>
         <li><a href="./pages/quienes-somos.html">Quienes Somos</a></li>
@@ -29,15 +28,63 @@
         <li><a href="./pages/comprar.html">Comprar</a></li>
         <li><a href="./pages/contacto.html">Contacto</a></li>
       </ul>
-      <!-- Fin de los enlaces de la barra de navegacion  -->
     </nav>
-    <!-- Fin de la barra de la navegacion  -->
+ -->
+
+ <nav class="navbar navbar-expand-lg navbar-dark bg-propio">
+  <div class="container-fluid ">
+    <a class="navbar-brand" href="#"><img src="./assets/logo-oro-dulce.png" alt="Logo Oro Dulce" title="Logo Oro Dulce" class="encabezado-img" /></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse d-flex justify-content-lg-end justify-content-md-center" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./pages/quienes-somos.html">Quienes Somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./pages/productos.html">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./pages/comprar.html">Comprar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
   </header>
   <!-- Fin de la cabecera -->
-  <main>
+  
+  <!-- <main> -->
     <!-- <h1 class="titulo-principal">Oro Dulce</h1> -->
+  <main>
+    <div class="container-fluid d-flex flex-lg-row flex-sm-column flex-md-column flex-xs-column justify-content-lg-center justify-content-md-center align-items-md-center bg-main">
+      
+      <div class="row d-flex flex-lg-row flex-md-column flex-sm-column flex-xs-column">
+        <div class="col-lg-5 col-md-10 d-flex justify-content-lg-center">      
+          <img class="img-fluid" src="./assets/04.png" alt="Tarro de miel 500g" title="Tarro de miel 500g" class="img-home" />
+        </div>
+        <div class="col-lg-7 col-md-2 d-flex justify-content-lg-center align-items-lg-center">
+          <p class="texto-presentacion">
+            “La miel de Oro Dulce es 100% natural, sin conservantes ni colorantes y cumple con todas las garantías
+            sanitarias”
+          </p>
+        </div>
+      </div>
 
-    <div class="contenedor-main">
+
+    </div>
+
+  </main>
+
+    <!-- <div class="contenedor-main">
 
       <img src="./assets/04.png" alt="Tarro de miel 500g" title="Tarro de miel 500g" class="img-home" />
 
@@ -50,8 +97,8 @@
         "Miel 100% Natural"
       </p>
 
-    </div>
-  </main>
+    </div> -->
+  <!-- </main> -->
   
   <!-- Footer -->
   <footer class="pie-de-pagina">
@@ -72,6 +119,9 @@
 
   </footer>
   <!-- Fin del footer  -->
+
+  <!-- Linj JavaScript Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -10,7 +10,7 @@
 
 /* Aplico grid*/
 
-.contenedor-principal{
+/* .contenedor-principal{
     display: grid;
 
     grid-template-areas: 
@@ -21,76 +21,105 @@
     
     width: 100%;
     height: 100vh;
-    grid-template-rows: 0.65fr 2.75fr 0.5fr; 
+    grid-template-rows: 1fr 2.75fr .5fr; 
 
-}
+} */
 
 /*Estructura principal*/
 
 header{
     background-color: black;
-    grid-area: header;
 }
 
-main{
-    background-image: url(../assets/abejas-miel-3.png);
-    grid-area: main;
-    width: 100%;
-    height: 100%;
+.bg-main{
+    /* background-image: url(../assets/abejas-miel-3.png);
 
+    width: 100%;
+    height: 100%; */
+
+    background: url(../assets/abejas-miel-3.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
+
+    /* background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center center; */
 }
 
 footer{
     background-color: black;
-    grid-area: footer;
 }
 
 /*Barra de navegacion*/
+/* 
+.encabezado{
+    display:flex;
+    flex-direction: column;
+} */
 
-nav{
+.bg-propio{
+    background-color: black;
+    /* position:fixed; */
+    width: 100%;
+    top:0;
+    z-index:99;
+}
+
+.nav-item a{
+    color: white !important;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+}
+
+.nav-item a:hover{
+    color:#DBB314 !important;
+}
+/* nav{
     display: flex;
     justify-content: start;
     align-items: center;
-}
+} */
 
-.navbar{
+/* .navbar{
     list-style: none;
     display: flex;
     justify-content: space-around;
-    /* align-items: center; */
     width: 35%;
-    /* padding-bottom: 5px; */
     margin-left: 60%;
     margin-top: 5rem;
-}
+} */
 
-nav ul li a {
+/* nav ul li a {
     text-decoration: none;
     font-size: 1.5rem;
     color: white;
     font-family: 'Bebas Neue', cursive;
+} */
 
-}
+
 /*Logo oro dulce*/
 
 .encabezado-img {
-    width: 8%;
+    height: 100px;
     display: flex;
-    justify-content: start;
-    align-items: start;
-    padding: 5px;
+    /* justify-content: end;
+    align-items: end; */
+    padding: 5px; 
 }
 
 /* Main Index */
 
-.contenedor-main{
+/* .contenedor-main{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
+/* 
+main{
+    margin-top: 20%;
+} */
 
 .texto-presentacion {
     /* grid-area: textoPresentacion; */
@@ -98,9 +127,9 @@ nav ul li a {
     font-size: 2.2rem;
     color: #DBB314;
     font-family: 'Caveat Brush', cursive;
-    /* justify-content: end;
-    align-items: center; */
-    width: 50%;
+    justify-content: center;
+    align-items: center; 
+    /* width: 50%; */
 
     /* border: 5px solid white; */
 
@@ -111,28 +140,31 @@ nav ul li a {
 }
 
 .img-home {
-    display:flex;
+    /* display:flex;
     justify-content: center;
-    align-items: center;
-    width: 24%;
+    align-items: center; */
+    /* width: 50vh; */
     padding-top: 1rem;
 
 }
 
-.navbar :hover {
-    color: #DBB314;
-}
-
 /* Footer*/
 
+footer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .pie-de-pagina h3 {
-    text-decoration: none;
     display: flex;
     justify-content: space-around;
-    align-items: end;
+    align-items: center;
     font-size: 1.6rem;
     color: white;
     font-family: 'Bebas Neue', cursive;
+    margin-left: 1.75rem;
     padding: 10px;
 }
 
@@ -140,8 +172,7 @@ nav ul li a {
     display: flex;
     flex-direction: row; 
     justify-content: center;
-    align-items: center;
-
+    align-items: center; 
 }
 
 .pie-de-pagina ul li {
@@ -156,7 +187,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 1rem;
+    /* padding-bottom: .5rem; */
     padding-top: 1rem;
 }
 
@@ -499,266 +530,4 @@ form input[type="reset"]:hover{
 
 .boton-reset:hover{
     border: 1px solid white;
-}
-
-/* Vista Mobile*/
-
-@media screen and (max-width:500px) {
-    nav{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; 
-    }
-
-    .navbar{
-        list-style: none;
-        display: flex;
-        margin: auto;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        border: 1px solid white;
-
-        /* padding-bottom: 5px; */
-    }
-    
-    nav ul li a {
-        text-decoration: none;
-        font-size: 1.5rem;
-        color: white;
-        font-family: 'Bebas Neue', cursive;
-        margin: auto;
-        /* display: flex;
-        justify-content: center;
-        align-items: center; */
-        /* border: 1px solid white; */
-    
-    }
-
-    nav ul li{
-        margin: auto;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center; 
-        border: 1px solid white;
-    }
-
-    .encabezado-img {
-        width: 25%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 1rem;
-    }
-
-    /*Formato Main*/
-
-    h1 {
-        font-size: 2.25rem;
-        text-align: center;
-       }
-
-    .contenedor-main{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-    }
-
-    .img-home {
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
-        /* padding-top: 1rem; */
-    
-    }
-
-    .texto-presentacion-mobile{
-        visibility: visible;
-        display: flex;
-        font-size: 2rem;
-        color: #DBB314;
-        font-family: 'Caveat Brush', cursive;
-        padding-top: 1rem;
-        /* justify-content: end;
-        align-items: center; */
-        /* width: 50%; */
-    }
-
-    .texto-presentacion{
-        display: none;
-    }
-
-    .logo-facebook {
-        width: 100%;
-        height: 100%;
-    }
-    
-    .logo-whatsapp {
-        width: 100%;
-        height: 100%;
-    }
-    
-    .logo-instagram {
-        width: 100%;
-        height: 100%;
-    } 
-
-    .pie-de-pagina ul li a{
-        padding-bottom: 0rem;
-        padding-top: 0rem;
-    }
-
-    .pie-de-pagina h3 {
-
-        font-size: 1.5rem;
-        padding: 10px;
-    }
-
-    .pie-de-pagina ul li {
-        width: 10%;
-        padding-bottom: 1rem;
-    }
-
-    section {
-        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(233,173,19,1) 5%);
-    }
-
-/* Pestaña quienes somos*/
-
-.contenedor-quienes-somos{
-    flex-direction: column;
-}
-
-.texto-quienes-somos{
-    font-size: 1.2rem;
-    width: 90%;
-    margin-bottom: 2rem;
-}
-
-.img-quienes-somos{
-    width: 80%;
-    margin-bottom: 1rem;
-}
-
-
-
-/* Pestaña Productos*/
-.img-productos{
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-}
-
-.img-producto1 {
-    height: 60%;
-    width: 60%;
-}
-
-.img-producto2 {
-    height: 60%;
-    width: 60%;
-   }
-
-.img-producto3 {
-    height: 60%;
-    width: 60%;
-}
-
-.img-producto4 {
-    height: 60%;
-    width: 60%;
-
-}
-
-.pie-de-foto{
-    font-size: 1.75rem;
-    padding: .75rem;
-
-}
-
-.producto4{
-    margin-bottom: 2rem;
-}
-
-/* Pestaña comprar*/
-
-.contenedor-ciudades{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.masinfo {
-    font-size: 1.5rem;
-    border-top:solid 2px black;
-    border-right:solid 0px cyan;
-    border-bottom:solid 2px black;
-    border-left:solid 0px yellow;
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-.ciudades {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
-    
-}
-
-.lugar {
-    font-size: 1.3rem;
-}
-
-.ciudades ul{
-    width: 100%;
-    text-align: center;
-}
-
-
-
-/* Pestaña Formulario*/
-
-.formulario{
-    flex-direction: column;
-    width: 100%;
-    padding-top: .5rem;
-    gap: 0rem;
-}
-
-.formP1{
-    width: 100%;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: .5rem;
-}
-
-.formP2{
-    width: 60%;
-    margin: auto;
-    text-align: center;
-    /* justify-content: space-around;
-    align-items: center; */
-}
-
-form input[type="text"],
-form input[type="email"],form input[type="tel"]{
-	width:15rem;
-}
-
-form input[type="submit"],form input[type="reset"]{
-    width:40%;
-    margin-bottom: 1rem;
-}
-
 }
