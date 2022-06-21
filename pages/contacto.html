@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Oro Dulce - Contacto</title>
+  <!-- Linkeo de Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
   <!--Linkeo de Css-->
   <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -14,20 +17,32 @@
   <!-- Cabecera de la pagina -->
   <header class="encabezado">
     <!-- Barra de navegacion -->
-    <nav>
-    <!-- Logo de mi pagina -->
-    <img src="../assets/logo-oro-dulce.png" alt="Logo Oro Dulce" title="Logo Oro Dulce" class="encabezado-img" />
-    <!-- Fin del logo de la pagina -->
-
-      <!-- Enlaces de la barra de navegacion -->
-      <ul class="navbar">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="./quienes-somos.html">Quienes Somos</a></li>
-        <li><a href="./productos.html">Productos</a></li>
-        <li><a href="./comprar.html">Comprar</a></li>
-        <li><a href="./contacto.html">Contacto</a></li>
-      </ul>
-      <!-- Fin de los enlaces de la barra de navegacion  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-propio">
+      <div class="container-fluid ">
+        <a class="navbar-brand" href="#"><img src="../assets/logo-oro-dulce.png" alt="Logo Oro Dulce" title="Logo Oro Dulce" class="encabezado-img" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-flex justify-content-lg-end justify-content-md-center justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/quienes-somos.html">Quienes Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/comprar.html">Comprar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <!-- Fin de la barra de la navegacion  -->
   </header>
@@ -97,25 +112,24 @@
     </form>
   </section>
   <!-- Footer -->
-  <footer class="pie-de-pagina">
-    <h3>Nuestras redes sociales</h3>
-    <ul>
+  <footer class="pie-de-pagina d-flex flex-column flex-md-column justify-content-center justify-content-md-center">
+    <h3 class="d-flex justify-content-center">Nuestras redes sociales</h3>
+    <ul class=" d-flex justify-content-center align-items-center px-2 ">
       <li class="logos"><a href="https://www.facebook.com/orodulceok/" target="_blank"> <img
-            src="../assets/logo-facebook.png" alt="Logo Facebook" class="logo-facebook" title="Oro Dulce - Facebook"
-            width="50px" height="50px"></a></li>
+            src="../assets/logo-facebook.png" alt="Logo Facebook" class="logo-facebook img-fluid img-responsive px-2" title="Oro Dulce - Facebook">
+        </a></li>
       <li class="logos"><a href="https://wa.me/5493462687381" target="_blank"> <img src="../assets/logo-whatsapp.png"
-            alt="Logo Whatsapp" class="logo-whatsapp" title="Oro Dulce - Whatsapp" width="50px" height="50px"> </a></li>
+            alt="Logo Whatsapp" class="logo-whatsapp img-fluid img-responsive px-2" title="Oro Dulce - Whatsapp"> </a></li>
       <li class="logos"><a href="https://www.instagram.com/orodulce_/" target="_blank"> <img
-            src="../assets/logo-instagram.png" alt="Logo Instagram" class="logo-instagram" title="Oro Dulce - Instagram"
-            width="50px" height="50px"> </a></li>
+            src="../assets/logo-instagram.png" alt="Logo Instagram" class="logo-instagram img-fluid img-responsive px-2" title="Oro Dulce - Instagram">
+        </a></li>
     </ul>
-
-    <!-- <h3>Contacto</h3>
-  
-      <a href="./pages/contacto.html">Contacto</a> -->
 
   </footer>
   <!-- Fin del footer  -->
+  <!-- Link JavaScript Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
