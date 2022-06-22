@@ -8,22 +8,6 @@
     box-sizing: border-box;
 }
 
-/* Aplico grid*/
-
-/* .contenedor-principal{
-    display: grid;
-
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer"
-    ; 
-    
-    width: 100%;
-    height: 100vh;
-    grid-template-rows: 1fr 2.75fr .5fr; 
-
-} */
 
 /*Estructura principal*/
 
@@ -32,29 +16,13 @@ header{
 }
 
 .bg-main{
-    /* background-image: url(../assets/abejas-miel-3.png);
-
-    width: 100%;
-    height: 100%; */
 
     background: url(../assets/abejas-miel-3.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
-    /* background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center; */
 }
-
-
-/*Barra de navegacion*/
-/* 
-.encabezado{
-    display:flex;
-    flex-direction: column;
-} */
 
 .bg-propio{
     background-color: black;
@@ -73,28 +41,6 @@ header{
 .nav-item a:hover{
     color:#DBB314 !important;
 }
-/* nav{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-} */
-
-/* .navbar{
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    width: 35%;
-    margin-left: 60%;
-    margin-top: 5rem;
-} */
-
-/* nav ul li a {
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: white;
-    font-family: 'Bebas Neue', cursive;
-} */
-
 
 /*Logo oro dulce*/
 
@@ -108,28 +54,10 @@ header{
 
 /* Main Index */
 
-/* .contenedor-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-/* 
-main{
-    margin-top: 20%;
-} */
-
 .texto-presentacion {
-    /* grid-area: textoPresentacion; */
-    /* display: flex; */
     font-size: 2.2rem;
     color: #DBB314;
     font-family: 'Caveat Brush', cursive;
-    /* justify-content: center;
-    align-items: center;  */
-    /* width: 50%; */
-
-    /* border: 5px solid white; */
-
 }
 
 .texto-presentacion-mobile{
@@ -137,12 +65,7 @@ main{
 }
 
 .img-home {
-    /* display:flex;
-    justify-content: center;
-    align-items: center; */
-    /* width: 50vh; */
     padding-top: 1rem;
-
 }
 
 /* Footer*/
@@ -150,43 +73,16 @@ main{
 footer{
     width: 100%;
     height: 100%;
-    /* display: flex;
-    flex-direction: column; */
+
     background-color: black;
 }
 
 .pie-de-pagina h3 {
-    /* display: flex;
-    justify-content: space-around;
-    align-items: center; */
+
     font-size: 1.6rem;
     color: white;
     font-family: 'Bebas Neue', cursive;
-    /* margin-left: 1.75rem; */
     padding: 1rem;
-}
-
-.pie-de-pagina ul {
-    /* display: flex;
-    flex-direction: row; 
-    justify-content: center;
-    align-items: center;  */
-}
-
-.pie-de-pagina ul li {
-    /* display: flex;
-    justify-content: space-around;
-    align-items: center; 
-    width: 5%; */
-}
-
-.pie-de-pagina ul li a{
-    /* list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* padding-bottom: .5rem; */
-    /* padding-top: 1rem; */
 }
 
 .pie-de-pagina h3{
@@ -228,8 +124,7 @@ footer{
 .img-responsive {
     width: auto;
     height: 3rem;
-    /* object-fit: cover;
-    object-position: center; */
+
   }
 
 /* Grilla secundaria */
@@ -248,16 +143,12 @@ footer{
 
 }
 
-section {
-    grid-area: seccion;
+section{
+    /* grid-area: seccion; */
     width: 100%;
     background: rgb(0, 0, 0);
     /* background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(233, 173, 19, 1) 100%); */
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(233,173,19,1) 15%);
-
-    /*Acomodo el content para que se adapte a mi pantalla*/
-    /* min-height: calc(100vh - 75px - 75px); */
-    /* background-size: 90rem; 253,187,45,1 -- 233,173,19,1 -- 219,179,20,1*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;;
@@ -274,21 +165,13 @@ h1 {
 
    /* Pestaña quienes somos*/
 .contenedor-quienes-somos{
-    /* display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%; */
     padding-top: 1rem;
 }
 
 .texto-quienes-somos{
-    /* font-size: 1.1rem; */
+    font-size: 1.15rem;
     color: black;
     font-family: 'Caveat Brush', cursive;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* width: 50%; */
 }
 
 .texto-quienes-somos p {
@@ -296,61 +179,20 @@ h1 {
 }
 
 .img-quienes-somos{
-    /* display: flex;
-    justify-content: center;
-    align-items:center; */
-    width: 65vh;
+    width: 75vh;
     height: auto;
     border: 0.25rem solid black;
 }
 
  /* Pestaña Productos*/
-.img-productos{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 5rem;
-    padding-top: 1rem;
-    /* object-fit: contain; */
-    /* width: fit-content;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin:0 auto; */
+
+.ph-card-header {
+    color: white !important;
+    background-color: black !important;
 }
 
-.producto1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.producto2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.producto3{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.producto4{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 .img-producto1 {
-    height: 75%;
-    width: 75%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     object-fit: fill;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     transition: transform.5s;    
@@ -361,11 +203,6 @@ h1 {
 }
 
 .img-producto2 {
-    height: 75%;
-    width: 75%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     object-fit: fill;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     transition: transform .5s;    
@@ -377,11 +214,6 @@ h1 {
 }
 
 .img-producto3 {
-    height: 75%;
-    width: 75%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     object-fit: fill;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     transition: transform .5s;    
@@ -393,11 +225,6 @@ h1 {
 }
 
 .img-producto4 {
-    height: 75%;
-    width: 75%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     object-fit: fill;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     transition: transform .5s;    
@@ -412,22 +239,32 @@ h1 {
     font-size: 1.3rem;
     color: black;
     font-family: 'Caveat Brush', cursive;
-    padding: .5rem;
+    /* padding: .5rem; */
+
+}
+.style-button{
+    background-color: #000;
+    color: #DBB314;
+    border: 2px solid black;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 1.2rem;
+}
+
+.style-button:hover{
+    background-color: #DBB314;
+    color: black;
+    border: 2px solid black;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 1.2rem;
 
 }
 
 /* Pestaña comprar*/
 
-.contenedor-ciudades{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-}
 
 .masinfo {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     font-size: 1.8rem;
     color: black;
     font-family: 'Caveat Brush', cursive;
@@ -446,40 +283,33 @@ h1 {
 .lugar {
     list-style: none;
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: black;
     font-family: 'Caveat Brush', cursive;
+}
+
+.mb-6{
+    margin-bottom: 5rem;
 }
 
 /* Pestaña Formulario*/
 
-.formulario{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding-top: 2rem;
-    gap: 5rem;
+.bg-form
+{
+    background-color: #000 !important;
+}
 
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: black;
+.texto-formulario
+{
+    /* font-size: 1.5rem; */
+    color: #DBB314 !important;
     font-family: 'Caveat Brush', cursive;
-    /* border-radius:15px; */
 }
 
-.formP1{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    /* justify-content: space-around;
-    align-items: center; */
-}
 
 form input[type="text"],
 form input[type="email"],form input[type="tel"]{
 	width:12rem;
-	/* padding:3px 10px; */
 	border:1px solid #f6f6f6;
 	border-radius:3px;
 	background-color:#f6f6f6;
@@ -489,10 +319,7 @@ form input[type="email"],form input[type="tel"]{
 form input[type="submit"],form input[type="reset"]{
     width:25%;
 	padding:8px 16px;
-	border:1px solid #000;
 	border-radius:5px;
-	color:#fff;
-	background-color:#000;
     text-align: center;
     margin: .5rem;
 }
@@ -504,35 +331,21 @@ textarea{
 	border-radius:3px;
 	background-color:#f6f6f6;			
 	margin:8px 0;
-	/*resize: vertical | horizontal | none | both*/
 }
 
-form input[type="submit"]:hover{
-	cursor:pointer;
+.style-button-form{
+    background-color: #000;
+    color: #DBB314;
+    border: 2px solid #DBB314;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 1.2rem;
 }
 
-form input[type="reset"]:hover{
-	cursor:pointer;
-}
+.style-button-form:hover{
+    background-color: #DBB314;
+    color: black;
+    border: 2px solid black;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 1.2rem;
 
-.botones{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.boton-enviar{
-    transition: all .1s;
-}
-
-.boton-enviar:hover{
-    border: 1px solid white;
-}
-
-.boton-reset{
-    transition: all .1s;
-}
-
-.boton-reset:hover{
-    border: 1px solid white;
 }
