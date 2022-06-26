@@ -1,38 +1,32 @@
+/* Importo las fuentes */
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
 
+/* Acomodo la pagina */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilos Generales*/
 
-/*Estructura principal*/
+/*Barra de navegacion*/
 
 header{
     background-color: black;
 }
 
-.bg-main{
-
-    background: url(../assets/abejas-miel-3.png) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
 .bg-propio{
     background-color: black;
-    /* position:fixed; */
     width: 100%;
     top:0;
     z-index:99;
 }
 
-.nav-item a{
+.nav-item a{ /*Letras*/
     color: white !important;
     font-family: 'Bebas Neue', cursive;
     font-size: 1.5rem;
@@ -42,30 +36,10 @@ header{
     color:#DBB314 !important;
 }
 
-/*Logo oro dulce*/
-
-.encabezado-img {
+.encabezado-img { /*Logo oro dulce*/
     height: 100px;
     display: flex;
-    /* justify-content: end;
-    align-items: end; */
     padding: 5px; 
-}
-
-/* Main Index */
-
-.texto-presentacion {
-    font-size: 2.2rem;
-    color: #DBB314;
-    font-family: 'Caveat Brush', cursive;
-}
-
-.texto-presentacion-mobile{
-    display: none;
-}
-
-.img-home {
-    padding-top: 1rem;
 }
 
 /* Footer*/
@@ -127,7 +101,35 @@ footer{
 
   }
 
-/* Grilla secundaria */
+/* Estilos a pestaña Index */
+
+/* Main Index */
+
+.bg-main{
+    background: url(../assets/abejas-miel-3.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.texto-presentacion {
+    font-size: 2.2rem;
+    color: #DBB314;
+    font-family: 'Caveat Brush', cursive;
+}
+
+.texto-presentacion-mobile{
+    display: none;
+}
+
+.img-home {
+    padding-top: 1rem;
+}
+
+
+/* Estilos generales a Paginas secundarias */
+
 .contenedor-secundario{
     display: grid;
 
@@ -136,7 +138,7 @@ footer{
     "seccion"
     "footer"
     ; 
- 
+
     height: 100vh;
     width:100%;
     grid-template-rows: 0.65fr 2.75fr 0.5fr; 
@@ -144,10 +146,8 @@ footer{
 }
 
 section{
-    /* grid-area: seccion; */
     width: 100%;
     background: rgb(0, 0, 0);
-    /* background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(233, 173, 19, 1) 100%); */
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(233,173,19,1) 15%);
     background-size: cover;
     background-repeat: no-repeat;
@@ -163,7 +163,8 @@ h1 {
     font-family: 'Caveat Brush', cursive;   
    }
 
-   /* Pestaña quienes somos*/
+/* Estilo a Pestaña quienes somos*/
+
 .contenedor-quienes-somos{
     padding-top: 1rem;
 }
@@ -181,15 +182,21 @@ h1 {
 .img-quienes-somos{
     width: 30rem;
     border: 0.25rem solid black;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
- /* Pestaña Productos*/
+.img-quienes-somos:hover{
+    -webkit-filter: opacity(100%);
+    filter: opacity(100%);
+}
+
+ /* Estilo a Pestaña Productos*/
 
 .ph-card-header {
     color: white !important;
     background-color: black !important;
 }
-
 
 .img-producto1 {
     object-fit: fill;
@@ -206,7 +213,6 @@ h1 {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     transition: transform .5s;    
 }
-
 
 .img-producto2:hover{
     transform: scale(1.05);
@@ -227,7 +233,6 @@ h1 {
     object-fit: fill;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     transition: transform .5s;    
-
 }
 
  .img-producto4:hover{
@@ -238,9 +243,8 @@ h1 {
     font-size: 1.3rem;
     color: black;
     font-family: 'Caveat Brush', cursive;
-    /* padding: .5rem; */
-
 }
+
 .style-button{
     background-color: #000;
     color: #DBB314;
@@ -258,40 +262,54 @@ h1 {
 
 }
 
-/* Pestaña comprar*/
+.precarga {
+    background:transparent url(../assets/loading.gif) center no-repeat;
+}
 
+/* Estilos a Pestaña comprar*/
 
 .masinfo {
-    /* display: flex;
-    justify-content: center; */
     font-size: 1.8rem;
     color: black;
     font-family: 'Caveat Brush', cursive;
-    border: black solid;
+    border-top: black solid;
+    border-bottom: black solid;
     margin-top: 2rem;
 }
 
 .ciudades {
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     color: black;
-    font-family: 'Caveat Brush', cursive;
-    
+    font-family: 'Caveat Brush', cursive;  
 }
 
 .lugar {
     list-style: none;
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: black;
     font-family: 'Caveat Brush', cursive;
+}
+
+.lugar:hover{
+    background-color: #DBB314;
 }
 
 .mb-6{
     margin-bottom: 5rem;
 }
 
-/* Pestaña Formulario*/
+.list-group-item{
+    background-color: white;
+}
+
+.item-title{
+    background-color: black ;
+    color: #DBB314;
+}
+
+/* Estilos a Pestaña Formulario*/
 
 .bg-form
 {
@@ -300,11 +318,9 @@ h1 {
 
 .texto-formulario
 {
-    /* font-size: 1.5rem; */
     color: #DBB314 !important;
     font-family: 'Caveat Brush', cursive;
 }
-
 
 form input[type="text"],
 form input[type="email"],form input[type="tel"]{
@@ -316,7 +332,6 @@ form input[type="email"],form input[type="tel"]{
 }
 
 form input[type="submit"],form input[type="reset"]{
-    /* width:30%; */
 	padding:8px 16px;
 	border-radius:5px;
     text-align: center;
