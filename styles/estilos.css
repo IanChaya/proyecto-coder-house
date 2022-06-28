@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: black;
+}
+header .bg-propio {
+  background-color: black;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+header .nav-item .nav-link {
+  color: white !important;
+  font-size: 1.5rem;
+  font-family: "Bebas Neue", cursive;
+}
+header .nav-item .nav-link:hover {
+  color: #DBB314 !important;
+}
+header .encabezado-img {
+  /*Logo oro dulce*/
+  height: 100px;
+  display: flex;
+  padding: 5px;
+}
+
+footer {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+footer h3 {
+  font-size: 1.6rem;
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  padding: 1rem;
+  padding-top: 1rem;
+}
+footer .logo-facebook {
+  width: 10%;
+  height: 10%;
+  transition: transform 0.5s;
+}
+footer .logo-facebook:hover {
+  transform: scale(1.25);
+}
+footer .logo-whatsapp {
+  width: 10%;
+  height: 10%;
+  transition: transform 0.5s;
+}
+footer .logo-whatsapp:hover {
+  transform: scale(1.25);
+}
+footer .logo-instagram {
+  width: 10%;
+  height: 10%;
+  transition: transform 0.5s;
+}
+footer .logo-instagram:hover {
+  transform: scale(1.25);
+}
+footer .img-responsive {
+  width: auto;
+  height: 3rem;
+}
+
+main .bg-main {
+  background: url(../assets/abejas-miel-3.png) no-repeat center center fixed;
+  background-size: cover;
+}
+main .texto-presentacion {
+  font-size: 2.2rem;
+  color: #DBB314;
+  font-family: "Caveat Brush", cursive;
+}
+main .img-home {
+  padding-top: 1rem;
+}
+
+.contenedor-secundario {
+  display: grid;
+  grid-template-areas: "header" "seccion" "footer";
+  height: 100vh;
+  width: 100%;
+  grid-template-rows: 0.65fr 2.75fr 0.5fr;
+}
+
+section {
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(233, 173, 19) 15%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+section h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  color: black;
+  font-family: "Caveat Brush", cursive;
+}
+
+.mb-6 {
+  margin-bottom: 5rem;
+}
+
+section .img-quienes-somos {
+  width: 30rem;
+  border: 0.25rem solid black;
+  filter: grayscale(100%);
+}
+section .img-quienes-somos:hover {
+  filter: opacity(100%);
+}
+section .texto-quienes-somos {
+  font-size: 1.15rem;
+  color: black;
+  font-family: "Caveat Brush", cursive;
+}
+section .texto-quienes-somos p {
+  text-align: justify;
+}
+
+/*.ph-card-header {
+    color: white !important;
+    background-color: black !important;
+} */
+.card .precarga {
+  background: transparent url(../assets/loading.gif) center no-repeat;
+}
+.card .img-producto1 {
+  -o-object-fit: fill;
+     object-fit: fill;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: transform 0.5s;
+}
+.card .img-producto1:hover {
+  transform: scale(1.05);
+}
+.card .img-producto2 {
+  -o-object-fit: fill;
+     object-fit: fill;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: transform 0.5s;
+}
+.card .img-producto2:hover {
+  transform: scale(1.05);
+}
+.card .img-producto3 {
+  -o-object-fit: fill;
+     object-fit: fill;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: transform 0.5s;
+}
+.card .img-producto3:hover {
+  transform: scale(1.05);
+}
+.card .img-producto4 {
+  -o-object-fit: fill;
+     object-fit: fill;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: transform 0.5s;
+}
+.card .img-producto4:hover {
+  transform: scale(1.05);
+}
+.card .card-body .pie-de-foto {
+  font-size: 1.3rem;
+  color: black;
+  font-family: "Caveat Brush", cursive;
+}
+.card .card-body .style-button {
+  background-color: #000;
+  color: #DBB314;
+  border: 2px solid black;
+  font-family: "Caveat Brush", cursive;
+  font-size: 1.2rem;
+}
+.card .card-body .style-button:hover {
+  background-color: #DBB314;
+  color: black;
+  border: 2px solid black;
+  font-family: "Caveat Brush", cursive;
+  font-size: 1.2rem;
+}
+
+.negocios .list-group .ciudades {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: black;
+  font-family: "Caveat Brush", cursive;
+}
+.negocios .list-group .list-group-item {
+  background-color: white;
+}
+.negocios .list-group .item-title {
+  background-color: black;
+  color: #DBB314;
+}
+.negocios .list-group .lugar {
+  list-style: none;
+  text-decoration: none;
+  font-size: 1rem;
+  color: black;
+  font-family: "Caveat Brush", cursive;
+}
+.negocios .list-group .lugar:hover {
+  background-color: #DBB314;
+}
+.negocios .masinfo {
+  font-size: 1.8rem;
+  color: black;
+  font-family: "Caveat Brush", cursive;
+  border-top: black solid;
+  border-bottom: black solid;
+  margin-top: 2rem;
+}
+
+.formulario .bg-form {
+  background-color: #000 !important;
+}
+.formulario .texto-formulario {
+  color: #DBB314 !important;
+  font-family: "Caveat Brush", cursive;
+}
+.formulario form input[type=text],
+.formulario form input[type=email],
+.formulario form input[type=tel] {
+  width: 12rem;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  margin: 8px 0;
+}
+.formulario form input[type=submit],
+.formulario form input[type=reset] {
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0.5rem;
+}
+.formulario textarea {
+  width: 100%;
+  height: 10rem;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  margin: 8px 0;
+}
+.formulario .style-button-form {
+  background-color: #000;
+  color: #DBB314;
+  border: 2px solid #DBB314;
+  font-family: "Caveat Brush", cursive;
+  font-size: 1.2rem;
+}
+.formulario .style-button-form:hover {
+  background-color: #DBB314;
+  color: black;
+  border: 2px solid black;
+  font-family: "Caveat Brush", cursive;
+  font-size: 1.2rem;
+}/*# sourceMappingURL=estilos.css.map */

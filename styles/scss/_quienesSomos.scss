@@ -1,0 +1,26 @@
+section {
+
+    .img-quienes-somos {
+        width: 30rem;
+        border: 0.25rem solid black;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+
+        &:hover {
+            -webkit-filter: opacity(100%);
+            filter: opacity(100%);
+
+        }
+    }
+
+    .texto-quienes-somos {
+        font-size: 1.15rem;
+        color: black;
+        font-family: $tipografia_principal;
+
+        p {
+            text-align: justify;
+        }
+    }
+
+}

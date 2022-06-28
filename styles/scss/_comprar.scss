@@ -1,0 +1,43 @@
+.negocios {
+
+    .list-group {
+
+        .ciudades {
+            text-decoration: none;
+            font-size: 1.1rem;
+            color: black;
+            font-family: $tipografia_principal;
+        }
+
+        .list-group-item {
+            background-color: white;
+        }
+
+        .item-title {
+            background-color: black;
+            color: $oro;
+        }
+
+        .lugar {
+            list-style: none;
+            text-decoration: none;
+            font-size: 1rem;
+            color: black;
+            font-family: $tipografia_principal;
+
+            &:hover {
+                background-color: $oro;
+            }
+
+        }
+    }
+
+    .masinfo {
+        font-size: 1.8rem;
+        color: black;
+        font-family: $tipografia_principal;
+        border-top: black solid;
+        border-bottom: black solid;
+        margin-top: 2rem;
+    }
+}
