@@ -42,6 +42,9 @@ footer h3 {
   padding: 1rem;
   padding-top: 1rem;
 }
+footer .logos {
+  list-style: none;
+}
 footer .logo-facebook {
   width: 10%;
   height: 10%;
