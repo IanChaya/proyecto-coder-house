@@ -39,17 +39,14 @@
 
     .style-button-form {
         background-color: #000;
-        color: $oro;
+        @include font_style(1.2rem, $oro, $tipografia_principal);
         border: 2px solid $oro;
-        font-family: $tipografia_principal;
-        font-size: 1.2rem;
 
         &:hover {
             background-color: $oro;
-            color: black;
+            @include font_style(1.2rem, black, $tipografia_principal);
             border: 2px solid black;
-            font-family: $tipografia_principal;
-            font-size: 1.2rem;
+
         }
     }
 }

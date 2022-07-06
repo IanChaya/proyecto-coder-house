@@ -10,9 +10,7 @@ header {
 
     .nav-item {
         .nav-link {
-            color: white !important;
-            font-size: 1.5rem;
-            font-family: $tipografia_navbar_footer;
+            @include font_style(1.5rem, white !important, $tipografia_navbar_footer);
             &:hover {
                 color: $oro !important;
             }

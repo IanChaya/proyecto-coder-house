@@ -1,0 +1,40 @@
+En el archivo index.html sumé el SEO con las siguientes caracteristicas
+
+- Descripcion: mediante la etiqueta meta name description, agregue el siguiente parrafo que explica en pocas palabtas el contenido de mi sitio:
+ "Este es el sitio web de Oro Dulce, una miel 100% natural, sin conservantes ni colorantes y que cumple con todas las garantías sanitarias"
+- Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán a todas las paginas de mi sitio:
+"miel natural, miel organica, miel, miel artesanal, comprar miel, miel sin conservantes"
+Encabezado: No contiene ya que utilizo otro tipo de disposicion en la pagina 
+
+En el archivo comprar.html sumé el SEO con las siguientes caracteristicas
+
+- Descripcion: mediante la etiqueta meta name description, agregue el siguiente parrafo que explica en pocas palabtas el contenido de esta pestaña:
+ "Compra miel 100% natural en nuestros negocios adheridos o mediante nuestras redes"
+- Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave:
+"miel natural, miel organica, miel, miel artesanal, comprar miel, miel sin conservantes"
+Encabezado: Utilicé un h1 con el texto: "Encontrá nuestros productos en las siguientes tiendas:"
+
+En el archivo contacto.html sumé el SEO con las siguientes caracteristicas
+
+- Descripcion: mediante la etiqueta meta name description, agregue el siguiente parrafo que explica en pocas palabtas el contenido de esta pestaña:
+ "Envianos tu consulta y te responderemos lo antes posible"
+- Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave:
+"miel natural, miel organica, miel, miel artesanal, comprar miel, miel sin conservantes"
+Encabezado: Utilicé un h1 con el texto: "Hacenos tu consulta!":
+
+En el archivo productos.html sumé el SEO con las siguientes caracteristicas
+
+- Descripcion: mediante la etiqueta meta name description, agregue el siguiente parrafo que explica en pocas palabtas el contenido de esta pestaña:
+ "Proba todos nuestros productos en sus diferentes envases y versiones"
+- Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave:
+"miel natural, miel organica, miel, miel artesanal, comprar miel, miel sin conservantes, miel en frasco de vidrio, miel en frasco de plastico, miel cremosa"
+Encabezado: Utilicé un h1 con el texto: "Nuestras Opciones":
+
+En el archivo productos.html sumé el SEO con las siguientes caracteristicas
+
+- Descripcion: mediante la etiqueta meta name description, agregue el siguiente parrafo que explica en pocas palabtas el contenido de esta pestaña:
+ "Oro dulce, una pasión heredada y una miel hecha en familia"
+- Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave:
+"miel natural, miel organica, miel, miel artesanal, comprar miel, miel sin conservantes"
+Encabezado: Utilicé un h1 con el texto: "Quienes Somos"
+

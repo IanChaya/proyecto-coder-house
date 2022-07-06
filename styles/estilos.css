@@ -16,8 +16,8 @@ header .bg-propio {
   z-index: 99;
 }
 header .nav-item .nav-link {
-  color: white !important;
   font-size: 1.5rem;
+  color: white !important;
   font-family: "Bebas Neue", cursive;
 }
 header .nav-item .nav-link:hover {
@@ -133,10 +133,6 @@ section .texto-quienes-somos p {
   text-align: justify;
 }
 
-/*.ph-card-header {
-    color: white !important;
-    background-color: black !important;
-} */
 .card .precarga {
   background: transparent url(../assets/loading.gif) center no-repeat;
 }
@@ -183,20 +179,20 @@ section .texto-quienes-somos p {
 }
 .card .card-body .style-button {
   background-color: #000;
-  color: #DBB314;
   border: 2px solid black;
-  font-family: "Caveat Brush", cursive;
   font-size: 1.2rem;
+  color: #DBB314;
+  font-family: "Caveat Brush", cursive;
 }
 .card .card-body .style-button:hover {
   background-color: #DBB314;
-  color: black;
   border: 2px solid black;
-  font-family: "Caveat Brush", cursive;
   font-size: 1.2rem;
+  color: black;
+  font-family: "Caveat Brush", cursive;
 }
 
-.negocios .list-group .ciudades {
+.negocios .list-group .ciudades, .negocios .list-group .lugar {
   text-decoration: none;
   font-size: 1.1rem;
   color: black;
@@ -210,11 +206,8 @@ section .texto-quienes-somos p {
   color: #DBB314;
 }
 .negocios .list-group .lugar {
-  list-style: none;
-  text-decoration: none;
   font-size: 1rem;
-  color: black;
-  font-family: "Caveat Brush", cursive;
+  list-style: none;
 }
 .negocios .list-group .lugar:hover {
   background-color: #DBB314;
@@ -261,15 +254,15 @@ section .texto-quienes-somos p {
 }
 .formulario .style-button-form {
   background-color: #000;
-  color: #DBB314;
-  border: 2px solid #DBB314;
-  font-family: "Caveat Brush", cursive;
   font-size: 1.2rem;
+  color: #DBB314;
+  font-family: "Caveat Brush", cursive;
+  border: 2px solid #DBB314;
 }
 .formulario .style-button-form:hover {
   background-color: #DBB314;
-  color: black;
-  border: 2px solid black;
-  font-family: "Caveat Brush", cursive;
   font-size: 1.2rem;
+  color: black;
+  font-family: "Caveat Brush", cursive;
+  border: 2px solid black;
 }/*# sourceMappingURL=estilos.css.map */

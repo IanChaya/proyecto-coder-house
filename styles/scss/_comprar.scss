@@ -4,9 +4,7 @@
 
         .ciudades {
             text-decoration: none;
-            font-size: 1.1rem;
-            color: black;
-            font-family: $tipografia_principal;
+            @include font_style(1.1rem, black,$tipografia_principal);
         }
 
         .list-group-item {
@@ -19,11 +17,9 @@
         }
 
         .lugar {
-            list-style: none;
-            text-decoration: none;
+            @extend .ciudades;
             font-size: 1rem;
-            color: black;
-            font-family: $tipografia_principal;
+            list-style: none;
 
             &:hover {
                 background-color: $oro;
@@ -33,9 +29,7 @@
     }
 
     .masinfo {
-        font-size: 1.8rem;
-        color: black;
-        font-family: $tipografia_principal;
+        @include font_style(1.8rem, black,$tipografia_principal);
         border-top: black solid;
         border-bottom: black solid;
         margin-top: 2rem;

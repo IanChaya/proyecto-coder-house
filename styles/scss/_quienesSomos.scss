@@ -14,9 +14,7 @@ section {
     }
 
     .texto-quienes-somos {
-        font-size: 1.15rem;
-        color: black;
-        font-family: $tipografia_principal;
+        @include font_style(1.15rem, black, $tipografia_principal);
 
         p {
             text-align: justify;
