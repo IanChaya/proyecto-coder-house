@@ -29,6 +29,9 @@ header .encabezado-img {
   display: flex;
   padding: 5px;
 }
+header .encabezado-img:hover {
+  opacity: 0.75;
+}
 
 footer {
   width: 100%;
@@ -82,9 +85,6 @@ main .texto-presentacion {
   font-size: 2.2rem;
   color: #DBB314;
   font-family: "Caveat Brush", cursive;
-}
-main .img-home {
-  padding-top: 1rem;
 }
 
 .contenedor-secundario {
@@ -228,6 +228,9 @@ section .texto-quienes-somos p {
   color: #DBB314 !important;
   font-family: "Caveat Brush", cursive;
 }
+.formulario .texto-formulario:hover {
+  opacity: 0.9;
+}
 .formulario form input[type=text],
 .formulario form input[type=email],
 .formulario form input[type=tel] {
@@ -236,6 +239,11 @@ section .texto-quienes-somos p {
   border-radius: 3px;
   background-color: #f6f6f6;
   margin: 8px 0;
+}
+.formulario form input[type=text]:hover,
+.formulario form input[type=email]:hover,
+.formulario form input[type=tel]:hover {
+  opacity: 0.9;
 }
 .formulario form input[type=submit],
 .formulario form input[type=reset] {
@@ -251,6 +259,9 @@ section .texto-quienes-somos p {
   border-radius: 3px;
   background-color: #f6f6f6;
   margin: 8px 0;
+}
+.formulario textarea:hover {
+  opacity: 0.9;
 }
 .formulario .style-button-form {
   background-color: #000;
