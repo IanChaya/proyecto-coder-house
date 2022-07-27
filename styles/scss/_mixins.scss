@@ -11,9 +11,10 @@
 }
 
 @mixin fondo_pantalla_completa{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
 }
 
 @mixin card_styles{

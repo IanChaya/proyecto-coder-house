@@ -12,6 +12,7 @@ header {
 header .bg-propio {
   background-color: black;
   width: 100%;
+  min-height: 15vh;
   top: 0;
   z-index: 99;
 }
@@ -36,6 +37,7 @@ header .encabezado-img:hover {
 footer {
   width: 100%;
   height: 100%;
+  min-height: 15vh;
   background-color: black;
 }
 footer h3 {
@@ -80,6 +82,7 @@ footer .img-responsive {
 main .bg-main {
   background: url(../assets/abejas-miel-3.png) no-repeat center center fixed;
   background-size: cover;
+  min-height: 70vh;
 }
 main .texto-presentacion {
   font-size: 2.2rem;
@@ -90,18 +93,17 @@ main .texto-presentacion {
 .contenedor-secundario {
   display: grid;
   grid-template-areas: "header" "seccion" "footer";
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  grid-template-rows: 0.65fr 2.75fr 0.5fr;
+  min-height: 75vh;
 }
 
 section {
   width: 100%;
-  background: rgb(0, 0, 0);
+  height: 100%;
+  background: rgb(0, 0, 0) no-repeat center center fixed;
   background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(233, 173, 19) 15%);
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 section h1 {
   display: flex;
