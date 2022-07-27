@@ -12,6 +12,7 @@ header {
 header .bg-propio {
   background-color: black;
   width: 100%;
+  height: 100%;
   min-height: 15vh;
   top: 0;
   z-index: 99;
@@ -90,26 +91,22 @@ main .texto-presentacion {
   font-family: "Caveat Brush", cursive;
 }
 
-.contenedor-secundario {
-  display: grid;
-  grid-template-areas: "header" "seccion" "footer";
-}
-
-section {
-  width: 100%;
-  height: 100%;
-  min-height: 75vh;
+.bg-secundario {
   background: rgb(0, 0, 0) no-repeat center center fixed;
   background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(233, 173, 19) 15%);
   background-size: cover;
+  min-height: 75vh;
 }
-section h1 {
+.bg-secundario h1 {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2.5rem;
   color: black;
   font-family: "Caveat Brush", cursive;
+}
+.bg-secundario .alineacion {
+  min-height: 50vh;
 }
 
 .mb-6 {
@@ -218,6 +215,7 @@ section .texto-quienes-somos p {
   font-family: "Caveat Brush", cursive;
   border-top: black solid;
   border-bottom: black solid;
+  width: 100%;
   margin-top: 2rem;
 }
 
